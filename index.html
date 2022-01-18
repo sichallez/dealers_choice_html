@@ -1,0 +1,111 @@
+<!-- background-image: url(lego_logo.png); -->
+
+<html>
+    <head>
+        <title>Lego website retro</title>
+        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+        <style>
+            * {
+                 box-sizing: border-box;
+            }
+            body {
+                font-family: Cera Pro,sans-serif;
+            }
+            h1 {
+                background-color: rgb(255, 208, 0);
+            }
+
+            .nav {
+                background-color: rgb(255, 208, 0);
+                width: 100%;
+                list-style-type: none;
+                padding: 0;
+                <!--display: flex;-->
+            }
+            .nav li {
+                background-color: rgb(255, 208, 0);
+                width: calc(100% / 4 - 10rem);
+                border: solid 1px gray;
+                float: left;
+            }
+            .nav li a {
+                display: block;
+                text-align: center;
+                padding: 16px;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+            .nav li:first-child {
+                
+                background-size: 100%;
+                background-position-x: -85px;
+                background-position-y: -20px;
+                display: inline-block;
+            }
+
+            #adImage {
+                position: relative;
+                text-align: center;
+            }
+
+            #adImage .pic {
+                width: 100%;
+            }
+
+            #adImage h2 {
+                position: absolute;
+                top: 110px;
+                left: 130px;
+                color: white;
+                font-size: 30px;
+                font-weight: normal;
+            }
+
+            #adImage p {
+                position: absolute;
+                top: 175px;
+                left: 130px;
+                color: white;
+                font-size: 15px;
+                line-height: 30px;
+                inline-size: 380px;
+                overflow-wrap: break-word;
+                text-align: left;
+            }
+
+            #adImage #button {
+                position: absolute;
+                top: 270px;
+                left: 130px;
+                font-size: 15px;
+                text-align: left;
+                background-color: white;
+                padding: 5px;
+            }
+
+        </style>
+    </head>
+    
+    <body>
+        <!-- <h1>Lego</h1> -->
+        <div id='navBar'>
+            <ul class='nav'>
+                <li><a href='#logo'><img src='lego_logo.png'></a></li>
+                <li><a href='#Shop'>Shop</a></li>
+                <li><a href='#Discover'>Discover</a></li>
+                <li><a href='#Help'>Help</a></li>
+            </ul>
+        </div>
+
+        <div id='adImage'>
+            <img class='pic' src='lego-ad.jpg'>
+            <h2 id='title'>Born on the racetrack</h2>
+            <p id='content'>High performance meets legendary style with the new LEGO® Technic™ BMW M 1000 RR.</p>
+            <button id='button' style='font-size:20px'>Shop now <i class='fas fa-angle-right'></i></button>
+        </div>
+
+    </body>
+
+
+
+</html>
