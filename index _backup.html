@@ -1,3 +1,4 @@
+<!-- background-image: url(lego_logo.png); -->
 
 <html>
     <head>
@@ -14,36 +15,28 @@
                 background-color: rgb(255, 208, 0);
             }
 
-            #navBar {
-            }
-
             .nav {
                 background-color: rgb(255, 208, 0);
                 width: 100%;
                 list-style-type: none;
-                height: 62px;
-                padding: 5px 0px;
-                background-clip: border-box;
+                padding: 0;
+                display: flex;
             }
             .nav li {
+                background-color: rgb(255, 208, 0);
                 width: calc(100% / 4 - 10rem);
-                float: left;
-                height: 52px;
-                display: table;
+                border: solid 1px gray;
+                <!-- float: left; -->
             }
             .nav li a {
+                display: block;
                 text-align: center;
+                padding: 16px;
                 text-decoration: none;
                 text-transform: uppercase;
-                vertical-align: middle;
-                display: table-cell;
-                color: black;
-                font-family: Cera Pro Medium,sans-serif;
-                font-weight: 595;
             }
-
-            .nav img {
-                height: 3rem;
+            .nav imag {
+                height: auto;
             }
 
             .nav li:first-child {
@@ -51,11 +44,7 @@
                 background-size: 100%;
                 background-position-x: -85px;
                 background-position-y: -20px;
-            }
-
-            .nav li a:last-child:hover {
-                text-underline-offset: 8px;
-                text-decoration: underline solid 3px;
+                display: inline-block;
             }
 
             #adImage {
@@ -88,38 +77,14 @@
                 text-align: left;
             }
 
-            #adImage #button1 {
+            #adImage #button {
                 position: absolute;
                 top: 270px;
                 left: 130px;
-                font-size: 16px;
-                text-align: center;
-                background-color: #f1f1f1;
-                padding: 6px 18px;
-                border: none;
-                border-radius: 5px;
-                cursor: pointer;
-            }
-            #adImage #button1:hover {
-                background-color: black;
-                color: white;
-            }
-
-            #adImage #button2 {
-                position: absolute;
-                top: 270px;
-                left: 270px;
-                font-size: 16px;
-                text-align: center;
-                background-color: #f1f1f1;
-                padding: 6px 18px;
-                border: none;
-                border-radius: 5px;
-                cursor: pointer;
-            }
-            #adImage #button2:hover {
-                background-color: black;
-                color: white;
+                font-size: 15px;
+                text-align: left;
+                background-color: white;
+                padding: 5px;
             }
 
         </style>
@@ -129,7 +94,7 @@
         <!-- <h1>Lego</h1> -->
         <div id='navBar'>
             <ul class='nav'>
-                <li><a href='#home'><img src='lego_logo.png'></a></li>
+                <li><a href='#logo'><img src='lego_logo.png'></a></li>
                 <li><a href='#Shop'>Shop</a></li>
                 <li><a href='#Discover'>Discover</a></li>
                 <li><a href='#Help'>Help</a></li>
@@ -140,8 +105,7 @@
             <img class='pic' src='lego-ad.jpg'>
             <h2 id='title'>Born on the racetrack</h2>
             <p id='content'>High performance meets legendary style with the new LEGO® Technic™ BMW M 1000 RR.</p>
-            <button id='button1'>Shop now <i class='fas fa-angle-right'></i></button>
-            <button id='button2'>Learn more<i class='fas fa-angle-right'></i></button>
+            <button id='button' style='font-size:20px'>Shop now <i class='fas fa-angle-right'></i></button>
         </div>
 
     </body>
